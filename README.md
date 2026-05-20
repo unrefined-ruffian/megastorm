@@ -38,6 +38,18 @@ Ten lenses ship in the box:
 
 Each framework is a single `.md` file in `frameworks/`. They're modular. The router automatically considers any file in the directory — drop in a new one and it becomes available.
 
+## Will this work where you run Claude?
+
+Megastorm's architecture leans hard on one capability — parallel sub-agent spawning. Each framework runs in its own isolated agent so they can't contaminate each other's thinking. That capability isn't available on every Claude surface.
+
+| Surface | Works? | What you get |
+|---|---|---|
+| **Claude Code** (CLI, desktop app, IDE extensions, claude.ai/code) | Yes, full architecture | Parallel isolated framework agents, router classification, synthesis with convergence detection. This is what it was built for. |
+| **Claude.ai chat** (consumer or Work tier, with the skill uploaded) | Partially | Claude will read the skill files and apply the frameworks, but consumer chat can't spawn isolated parallel agents. You'll get sequential framework analysis in one context — useful, but closer to "Claude considers multiple frameworks" than "ten independent brains." |
+| **Pasting a single framework into any Claude chat** | Always | The individual files in `frameworks/` are self-contained. Grab one, paste it in, get value. You lose the orchestration, not the thinking. |
+
+If you're on Claude Code: install and go. If you're on consumer chat: upload the skill but adjust your expectations, or just grab a single framework file when you need that specific lens.
+
 ## Install
 
 Megastorm is a [Claude Code skill](https://docs.claude.com/en/docs/claude-code). It installs into your local skills directory.
