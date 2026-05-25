@@ -1,4 +1,4 @@
-# Megastorm
+# Megastorm [⚡‿⚡]
 
 **Multi-framework brainstorming for Claude Code. Ten brains, none of them talking to each other, one synthesis agent at the end.**
 
