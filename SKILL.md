@@ -75,7 +75,7 @@ Read the confirmed brief. Before selecting frameworks, classify the problem shap
 
 State the classification explicitly. It makes framework selection legible and challengeable by the user.
 
-Then, for each framework in `~/.claude/skills/megastorm/frameworks/`, ask: "Does this lens reveal something useful about THIS type of problem?"
+Then, for each framework in the `frameworks/` directory adjacent to this SKILL.md, ask: "Does this lens reveal something useful about THIS type of problem?"
 
 **Available frameworks:**
 - `inversion.md` — Make it terrible first, then flip
@@ -200,7 +200,7 @@ The synthesis has two tiers: a TLDR that hits like a hammer, and a Deep Dive wit
 
 ## Framework Library
 
-Frameworks live in `~/.claude/skills/megastorm/frameworks/`. Each file is a standalone lens definition.
+Frameworks live in the `frameworks/` directory adjacent to this SKILL.md. Each file is a standalone lens definition.
 
 **To add a new framework:** Create a new `.md` file in `frameworks/` following the pattern:
 - Name + what this lens does (one sentence)

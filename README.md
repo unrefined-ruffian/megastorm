@@ -45,20 +45,45 @@ Megastorm's architecture leans hard on one capability — parallel sub-agent spa
 | Surface | Works? | What you get |
 |---|---|---|
 | **Claude Code** (CLI, desktop app, IDE extensions, claude.ai/code) | Yes, full architecture | Parallel isolated framework agents, router classification, synthesis with convergence detection. This is what it was built for. |
-| **Claude.ai chat** (consumer or Work tier, with the skill uploaded) | Partially | Claude will read the skill files and apply the frameworks, but consumer chat can't spawn isolated parallel agents. You'll get sequential framework analysis in one context — useful, but closer to "Claude considers multiple frameworks" than "ten independent brains." |
+| **Claude Cowork** (desktop app, Mac/Windows) | Yes, full architecture | Cowork supports parallel sub-agent coordination, so the isolation pattern works the same as in Claude Code. Install path is different (see below). |
+| **Claude.ai consumer chat** (with the skill uploaded) | Partially | Claude will read the skill files and apply the frameworks, but consumer chat can't spawn isolated parallel agents. You'll get sequential framework analysis in one context — useful, but closer to "Claude considers multiple frameworks" than "ten independent brains." |
 | **Pasting a single framework into any Claude chat** | Always | The individual files in `frameworks/` are self-contained. Grab one, paste it in, get value. You lose the orchestration, not the thinking. |
 
-If you're on Claude Code: install and go. If you're on consumer chat: upload the skill but adjust your expectations, or just grab a single framework file when you need that specific lens.
+If you're on Claude Code or Cowork: install and go. If you're on consumer chat: upload the skill but adjust your expectations, or just grab a single framework file when you need that specific lens.
 
 ## Install
 
-Megastorm is a [Claude Code skill](https://docs.claude.com/en/docs/claude-code). It installs into your local skills directory.
+### Claude Code
+
+Megastorm is a [Claude Code skill](https://docs.claude.com/en/docs/claude-code). Clone into your local skills directory:
 
 ```bash
 git clone https://github.com/unrefined-ruffian/megastorm.git ~/.claude/skills/megastorm
 ```
 
-That's it. In Claude Code, you can now type `/megastorm` and it'll run.
+In Claude Code, type `/megastorm` and it'll run.
+
+### Claude Cowork
+
+Cowork installs plugins via upload, not git clone. Two paths:
+
+**Easiest** — download and upload:
+
+1. On this repo, click the green **Code** button → **Download ZIP**
+2. Open Claude Desktop, switch to the **Cowork** tab
+3. Click **Customize** in the left sidebar → **Browse plugins** → look for the **upload custom plugin file** option
+4. Select the downloaded ZIP
+
+**Or from clone** — if you've already got it locally:
+
+```bash
+cd ~/projects/oss/megastorm  # or wherever you cloned it
+zip -r megastorm.zip . -x ".git/*" ".DS_Store"
+```
+
+Then upload `megastorm.zip` via the Customize panel.
+
+Once installed, megastorm will trigger on `/megastorm`, "megastorm this", or "run megastorm" — same as in Claude Code.
 
 ## Usage
 

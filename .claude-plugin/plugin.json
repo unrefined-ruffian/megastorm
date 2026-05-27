@@ -1,0 +1,21 @@
+{
+  "name": "megastorm",
+  "displayName": "Megastorm",
+  "version": "1.0.0",
+  "description": "Multi-framework brainstorming for Claude. Runs 3-5 cognitive frameworks in parallel via isolated agents, then synthesizes the output with convergence detection and tension surfacing.",
+  "author": {
+    "name": "Justin Williams",
+    "url": "https://github.com/unrefined-ruffian"
+  },
+  "homepage": "https://github.com/unrefined-ruffian/megastorm",
+  "repository": "https://github.com/unrefined-ruffian/megastorm",
+  "license": "MIT",
+  "keywords": [
+    "brainstorming",
+    "ideation",
+    "frameworks",
+    "behavioral-science",
+    "synthesis",
+    "parallel-agents"
+  ]
+}
