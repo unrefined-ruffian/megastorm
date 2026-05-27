@@ -4,7 +4,7 @@
 
 Most brainstorms collapse into whoever has the loudest voice — or whoever's framework you happened to read most recently. Megastorm runs 3–5 cognitive frameworks in parallel, each in an isolated agent that can't see the others, then converges the output into ranked insights with a synthesis agent. The frameworks can't groupthink because they don't know the others exist.
 
-It's brainstorming on steroids.
+It's brainstorming on steroids [ϟ‿ϟ]
 
 ---
 
