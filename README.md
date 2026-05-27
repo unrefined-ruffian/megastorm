@@ -1,10 +1,10 @@
 # Megastorm [ϟ‿ϟ]
 
-**Multi-framework brainstorming for Claude Code. Ten brains, none of them talking to each other, one synthesis agent at the end.**
+**Multi-framework brainstorming for Claude Code/Cowork. Ten frameworks, none of them talking to each other, one synthesis agent at the end.**
 
 Most brainstorms collapse into whoever has the loudest voice — or whoever's framework you happened to read most recently. Megastorm runs 3–5 cognitive frameworks in parallel, each in an isolated agent that can't see the others, then converges the output into ranked insights with a synthesis agent. The frameworks can't groupthink because they don't know the others exist.
 
-It's the brainstorming move you'd run if you had ten consultants who hated each other.
+It's brainstorming on steroids.
 
 ---
 
@@ -28,10 +28,10 @@ Ten lenses ship in the box:
 | **Inversion** | Make it maximally terrible, then flip everything |
 | **Six Hats** | Six cognitive modes — facts, emotion, devil's advocate, optimism, creativity, process |
 | **Five Whys** | Drill past symptoms until you hit something structural |
-| **Extreme Questions** | What if 10x scale? 1/10 budget? Weekend build? Zero technology? |
+| **Extreme Questions** | What if 10x scale? 1/10 budget? Weekend build? Zero technology? Creativity via thinking at extremes |
 | **Reframe** | Change the perspective, change the problem |
 | **Jobs to Be Done** | What is this product actually hired to do? |
-| **Behavioral Science** | Sutherland / Cialdini / Kahneman — design for the human that exists, not the one you wish existed |
+| **Behavioral Science** | Design for the human that exists, not the one you wish existed (Sutherland / Cialdini / Kahneman) |
 | **Six Behavioral Lenses** | A diagnostic teardown — shadow product, identity permission, scarcity-as-event, dimension shifting, rationalization, narrative finitude |
 | **Identity Persuasion** | The product is an identity trade. Who does the user become by engaging? |
 | **Anti-Incumbent** | Map every attribute incumbents share, invert them all, find the breakout product in the negative space |
