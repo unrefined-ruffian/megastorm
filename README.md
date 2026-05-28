@@ -25,16 +25,16 @@ Ten lenses ship in the box:
 
 | Framework | What it sees |
 |---|---|
-| **Inversion** | Make it maximally terrible, then flip everything |
-| **Six Hats** | Six cognitive modes — facts, emotion, devil's advocate, optimism, creativity, process |
-| **Five Whys** | Drill past symptoms until you hit something structural |
-| **Extreme Questions** | What if 10x scale? 1/10 budget? Weekend build? Zero technology? Creativity via thinking at extremes |
-| **Reframe** | Change the perspective, change the problem |
+| **Inversion** | Define what makes an experience maximally horrible → invert it. |
 | **Jobs to Be Done** | What is this product actually hired to do? |
-| **Behavioral Science** | Design for the human that exists, not the one you wish existed (Sutherland / Cialdini / Kahneman) |
-| **Six Behavioral Lenses** | A diagnostic teardown — shadow product, identity permission, scarcity-as-event, dimension shifting, rationalization, narrative finitude |
+| **Six Hats** | Six cognitive modes — facts, emotion, devil's advocate, optimism, creativity, process. |
+| **Five Whys** | Drill past symptoms until you hit something structural. |
+| **Extreme Questions** | What if 10x price increase? 1/10 budget? Launch in a weekend? Zero technology? Creativity via thinking at extremes. |
+| **Reframe** | Change the perspective, change the problem. |
+| **Behavioral Science** | Design for the human that exists, not the one you wish existed (Sutherland / Cialdini / Kahneman). |
+| **Six Behavioral Lenses** | My personal diagnostic teardown — shadow product, identity permission, scarcity-as-event, dimension shifting, rationalization, narrative finitude. |
 | **Identity Persuasion** | The product is an identity trade. Who does the user become by engaging? |
-| **Anti-Incumbent** | Map every attribute incumbents share, invert them all, find the breakout product in the negative space |
+| **Anti-Incumbent** | Map every attribute incumbents share, invert them all, find the breakout product in the negative space. |
 
 Each framework is a single `.md` file in `frameworks/`. They're modular. The router automatically considers any file in the directory — drop in a new one and it becomes available.
 
@@ -74,16 +74,7 @@ Cowork installs plugins via upload, not git clone. Two paths:
 3. Click **Customize** in the left sidebar → **Browse plugins** → look for the **upload custom plugin file** option
 4. Select the downloaded ZIP
 
-**Or from clone** — if you've already got it locally:
-
-```bash
-cd ~/projects/oss/megastorm  # or wherever you cloned it
-zip -r megastorm.zip . -x ".git/*" ".DS_Store"
-```
-
-Then upload `megastorm.zip` via the Customize panel.
-
-Once installed, megastorm will trigger on `/megastorm`, "megastorm this", or "run megastorm" — same as in Claude Code.
+Once installed, megastorm will trigger on `/megastorm`, "megastorm this", or "run megastorm on this bitch" — same as in Claude Code.
 
 ## Usage
 
